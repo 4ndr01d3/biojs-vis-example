@@ -1,7 +1,7 @@
 {
   "name": "biojs-vis-example",
   "description": "Creating a basic example for biojs",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "homepage": "https://github.com/4ndr01d3/biojs-vis-example",
   "author": {
     "name": "gsalazar",

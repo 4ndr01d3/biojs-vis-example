@@ -2,31 +2,25 @@
 
 [![NPM version](http://img.shields.io/npm/v/biojs-vis-example.svg)](https://www.npmjs.org/package/biojs-vis-example) 
 
-> Creating a basic example for biojs
+> demo
 
 ## Getting Started
 Install the module with: `npm install biojs-vis-example`
 
 ```javascript
-var example = require('biojs-vis-example');
-example.hello("biojs"); // "hello biojs"
+var Example = require('biojs-vis-example');
+var instance = new Example({
+	el: rootDiv, 
+	sequence: "CAGTGCATGatACGTCAGTGCATGCTGGGGGGGGGgcatgcatgcatgCC"}
+);
 ```
 
 ## Documentation
+This component has been created in order to support the content of the BioJS tutorial for [Vizbi2016](http://vizbi.org/2016).
 
-#### .hello(name)
+The slides for the talk can be seen [here](http://biojs-edu.github.io/Vizbi-2016/dist/html/create_a_biojs_component.html).
 
-**Parameter**: `name`
-**Type**: `String`
-**Example**: `biojs`
-
-The 'hello' method is responsible for showing a name.
-
-How to use this method
-
-```javascript
-example.hello('biojs'); // "hello biojs"
-```
+A repo containing the code for the slides is available [here](https://github.com/biojs-edu/Vizbi-2016).
 
 ## Contributing
 
