@@ -17,27 +17,40 @@
   "license": "Apache-2.0",
   "main": "lib/index.js",
   "scripts": {
-		"test": "echo 'Error: no test specified' && exit 1",
-		"build": "mkdirp build && browserify -r ./:biojs-vis-example -o build/example.js",
-		"build-browser": "npm run build",
-		"prepublish": "npm run build",
-		"watch": "watchify -r ./:biojs-vis-example -v -o build/example.js",
-		"w": "prunner \"npm run sniper\" \"npm run watch\"",
-		"sniper": "sniper ."
+    "test": "echo 'Error: no test specified' && exit 1",
+    "build": "mkdirp build && browserify -r ./:biojs-vis-example -o build/example.js",
+    "build-browser": "npm run build",
+    "prepublish": "npm run build",
+    "watch": "watchify -r ./:biojs-vis-example -v -o build/example.js",
+    "w": "prunner \"npm run sniper\" \"npm run watch\"",
+    "sniper": "sniper ."
   },
-  "dependencies": {},
+  "dependencies": {
+    "d3": "^3.5.16"
+  },
   "devDependencies": {
-		"mkdirp": "^0.5.0",
-		"browserify": "6.x",
-		"sniper": "0.x",
-		"watchify": "^1.0.6",
-		"prunner": "1.x"
-  }, 
+    "mkdirp": "^0.5.0",
+    "browserify": "6.x",
+    "sniper": "0.x",
+    "watchify": "^1.0.6",
+    "prunner": "1.x"
+  },
   "sniper": {
-    "js": [ "/build/example.js"],
-    "css": [ "/css/main.css"],
-    "snippets": ["examples"],
+    "js": [
+      "/build/example.js"
+    ],
+    "css": [
+      "/css/main.css"
+    ],
+    "snippets": [
+      "examples"
+    ],
     "first": "simple"
-   }, 
-  "keywords": ["biojs","barchart","d3","biojs"]
+  },
+  "keywords": [
+    "biojs",
+    "barchart",
+    "d3",
+    "biojs"
+  ]
 }
